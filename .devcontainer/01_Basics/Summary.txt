@@ -1,0 +1,36 @@
+** Types of data types from memory perspective
+1. Primitive Type : It is also called value types
+    It has 7 different types
+        i. String => let name = "Shashi"
+        ii. Number => let num = 123
+        iii. Boolean => let isTrue = true
+        iv. null => let temperature = null
+        v. undefined => let sky; or let sky = undefined
+        vi. Symbol => 
+            let id = Symbol('123')
+            let newId = Symbol('123')
+            console.log(id === newId) // false since both are unique symbol
+        vii. BigInt => let bigNumber = 2536475187863498564876956758736986483465n
+2. Non primitive or Reference type
+    It has 3 different types
+        i. Array => let arr = ["saktimaan", "flyingJaat", "MrIndia", "naagraj"]
+        ii. Objects =>
+            let myObj = {
+                name : "Shashi",
+                age : 22
+            }
+        iii. Functions => 
+            const myFunction = function(){
+                console.log("My Function");
+            }
+
+
+** JavaScript is Dynamically typed langauge as we need not explicitly tell which data type variable is defied
+ex: let num = 33
+    num = "Shashi"
+
+** To know the data typ eof any variablewe use typeof function 
+ex: let name = "Shashi"
+    console.log(typeof(name))
+
+** data type of null is object
