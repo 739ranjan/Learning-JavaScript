@@ -34,3 +34,4 @@ ex: let name = "Shashi"
     console.log(typeof(name))
 
 ** data type of null is object
+
