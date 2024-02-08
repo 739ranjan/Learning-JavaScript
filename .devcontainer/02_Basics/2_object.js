@@ -69,3 +69,74 @@ console.log(newtinder)
 tinder.id = "T0012"
 tinder.name = "Suraj"
 console.log(tinder)
+
+// adding object to an object
+console.log("object inside an object example")
+const innerObj = {
+    email:"shashi@gmail.com",
+    fullName:{
+        fName : "Shashi",
+        lName: "Ranjan"
+    }
+}
+console.log(innerObj)
+console.log(innerObj.fullName)
+console.log(innerObj.fullName.fName)
+
+//combining Objects
+const obj1 = {
+    1:'a',
+    2:'b'
+}
+const obj2= {
+    3 : 'A',
+    4:'B'
+}
+const obj3 = {obj1, obj2} // this is not the way to combine objects
+console.log(obj3)
+const obj4 = Object.assign(obj1, obj2) // it the way o combine objects
+console.log("Obj4 => ")
+console.log(obj4)
+const combinedObj = Object.assign({}, obj1, obj2) // this is the proper way as per the documentation ('{}' is optional parameter)
+console.log("combined Object => ")
+console.log(combinedObj)
+
+// we can also use spread operator to combine objects
+const spredObj = {...obj1, ...obj2}
+console.log(spredObj)
+
+// some important methods of Object
+const user = {
+    name:"Shashi",
+    course:"Btech",
+    sem:8
+}
+
+// taking out keys and values from object
+console.log("Keys : "+Object.keys(user))
+console.log("Values : "+Object.values(user))
+
+// to ckeck the entries of the object
+console.log("Entries => ")
+console.log(Object.entries(user)) // returns array of key and values
+
+// to check whether a propery exist or not
+console.log(user.hasOwnProperty('sem'))
+
+
+// how to deal with array of objects while dealing with database
+const users = [
+    {
+        id: 1234,
+        mail: "1234@gmail.com"
+    },
+    {
+        id:1235,
+        mail: "1235@gmail.com"
+    },
+    {
+        id: 1236,
+        mail: "1236@gmail.com"
+    }
+]
+console.log(users[1].mail)
