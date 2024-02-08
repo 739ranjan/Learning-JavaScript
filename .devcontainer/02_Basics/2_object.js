@@ -140,3 +140,23 @@ const users = [
     }
 ]
 console.log(users[1].mail)
+
+
+
+// -------------------------------Objects Part 3---------------------------------
+console.log("......................................part 3.....................................................")
+
+// de-structuring objects
+const course = {
+    courseName : "js in hindi",
+    price : 999,
+    instructor: "Shahsi"
+}
+
+// another way of fetching the elements of Objects
+const {instructor} = course
+console.log(instructor)
+//in the above syntax => const {key : any_name} = objectName proving any name to key is optional as done in above
+const {courseName : cName} = course
+console.log(cName)
+
