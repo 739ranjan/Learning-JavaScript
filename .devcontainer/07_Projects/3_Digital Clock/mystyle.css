@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.853);
+}
+h1{
+    color: white;
+    font-size: 20px;
+}
+.time{
+    font-size: 25px;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid red;
+}
