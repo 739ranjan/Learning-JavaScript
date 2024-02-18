@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(97, 87, 87);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    line-height: 50px;
+}
+button{
+    margin: 30px;
+    padding: 8px;
+    color: White;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 150px;
+    border: double rgb(74, 3, 254);
+}
+#stop{
+    background-color: rgb(236, 2, 2);
+}
+#start{
+    background-color: greenyellow;
+}
